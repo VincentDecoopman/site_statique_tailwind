@@ -3,6 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @import "tailwindcss";
+      @font-face {
+        font-family: "BloodborneFont";
+        src: url("./fonts/Bloodborne.ttf") format("truetype");
+      }
+
+      @theme {
+        --font-sans: "BloodborneFont", ui-sans-serif, system-ui, sans-serif;
+        --font-bloodborne: "BloodborneFont";
+      }
+    </style>
+
+    <h1 class="font-bloodborne">Bloodborne Text</h1>
     <title>Klivio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +33,7 @@
       <section>
         <nav>
           <img
-            src="/site_statique/images/logo.png"
+            src="/site_statique_tailwind/images/logo.png"
             alt="logo du site"
             class="logo"
           />
@@ -39,7 +54,9 @@
       <section class="hero">
         <div class="hero-image">
           <div class="hero-text">
-            <h1>Klivio, l'allié de votre progression</h1>
+            <h1 class="font-bloodborne">
+              Klivio, l'allié de votre progression
+            </h1>
             <p class="phero">
               Les meilleures formations sur le développement personnel
             </p>
@@ -52,7 +69,10 @@
         <h2 class="text_populaire">Les formations populaires</h2>
         <div class="row">
           <div class="cards">
-            <img src="/site_statique/images/img-course.png" alt="Fond cours" />
+            <img
+              src="/site_statique_tailwind/images/img-course.png"
+              alt="Fond cours"
+            />
             <div class="prix">
               <p class="prix_normal">15.99€</p>
               <p class="prix_barre">60€</p>
@@ -67,7 +87,10 @@
             <p>Gagnez en aisance et captez votre auditoire</p>
           </div>
           <div class="cards">
-            <img src="/site_statique/images/img-course.png" alt="Fond cours" />
+            <img
+              src="/site_statique_tailwind/images/img-course.png"
+              alt="Fond cours"
+            />
             <div class="prix">
               <p class="prix_normal">15.99€</p>
               <p class="prix_barre">60€</p>
@@ -85,7 +108,10 @@
             <p>Apprenez à rester serein face aux défis</p>
           </div>
           <div class="cards">
-            <img src="/site_statique/images/img-course.png" alt="Fond cours" />
+            <img
+              src="/site_statique_tailwind/images/img-course.png"
+              alt="Fond cours"
+            />
             <div class="prix">
               <p class="prix_normal">15.99€</p>
               <p class="prix_barre">60€</p>
@@ -100,7 +126,10 @@
             <p>Collaborez efficacement, même à distance</p>
           </div>
           <div class="cards">
-            <img src="/site_statique/images/img-course.png" alt="Fond cours" />
+            <img
+              src="/site_statique_tailwind/images/img-course.png"
+              alt="Fond cours"
+            />
             <div class="prix">
               <p class="prix_normal">15.99€</p>
               <p class="prix_barre">60€</p>
@@ -127,7 +156,10 @@
         <h2 class="text_recents">Les formations récentes</h2>
         <div class="englobe">
           <div class="cards">
-            <img src="/site_statique/images/img-course.png" alt="Fond cours" />
+            <img
+              src="/site_statique_tailwind/images/img-course.png"
+              alt="Fond cours"
+            />
             <div class="prix_recent">
               <p class="prix_normal_recent">15.99€</p>
               <p class="prix_barre_recent">60€</p>
@@ -144,7 +176,10 @@
             </p>
           </div>
           <div class="cards">
-            <img src="/site_statique/images/img-course.png" alt="Fond cours" />
+            <img
+              src="/site_statique_tailwind/images/img-course.png"
+              alt="Fond cours"
+            />
             <div class="prix_recent">
               <p class="prix_normal_recent">15.99€</p>
               <p class="prix_barre_recent">60€</p>
@@ -159,7 +194,10 @@
             <p class="blanc">Développez calme et intelligence émotionnelle</p>
           </div>
           <div class="cards">
-            <img src="/site_statique/images/img-course.png" alt="Fond cours" />
+            <img
+              src="/site_statique_tailwind/images/img-course.png"
+              alt="Fond cours"
+            />
             <div class="prix_recent">
               <p class="prix_normal_recent">15.99€</p>
               <p class="prix_barre_recent">60€</p>
@@ -179,7 +217,10 @@
             </p>
           </div>
           <div class="cards">
-            <img src="/site_statique/images/img-course.png" alt="Fond cours" />
+            <img
+              src="/site_statique_tailwind/images/img-course.png"
+              alt="Fond cours"
+            />
             <div class="prix_recent">
               <p class="prix_normal_recent">15.99€</p>
               <p class="prix_barre_recent">60€</p>
@@ -207,7 +248,7 @@
         <div class="clts">
           <div class="juliette">
             <img
-              src="/site_statique/images/juliette.png"
+              src="/site_statique_tailwind/images/juliette.png"
               alt="Juliette"
               class="img_juliette"
             />
@@ -227,7 +268,7 @@
           </div>
           <div class="camille">
             <img
-              src="/site_statique/images/camille.png"
+              src="/site_statique_tailwind/images/camille.png"
               alt="Camille"
               class="img_camille"
             />
@@ -285,7 +326,7 @@
         </div>
         <div class="img-avantages">
           <img
-            src="/site_statique/images/avantages.png"
+            src="/site_statique_tailwind/images/avantages.png"
             alt="avantages"
             class="image_avantage"
           />
@@ -299,7 +340,7 @@
           Créez vos formations avec klivio
         </h2>
         <img
-          src="/site_statique/images/become-author.png"
+          src="/site_statique_tailwind/images/become-author.png"
           alt="creer sa formation"
           class="image_creation"
         />
@@ -362,7 +403,7 @@
         </div>
         <div class="partie_2">
           <img
-            src="/site_statique/images/logo.png"
+            src="/site_statique_tailwind/images/logo.png"
             alt="logo"
             class="logo_propos"
           />
@@ -398,7 +439,7 @@
         <div class="trait"></div>
         <div class="footer_1">
           <img
-            src="/site_statique/images/logo.png"
+            src="/site_statique_tailwind/images/logo.png"
             alt="Logo"
             class="logo_footer"
           />
