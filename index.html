@@ -17,7 +17,6 @@
       }
     </style>
 
-    <h1 class="font-bloodborne">Bloodborne Text</h1>
     <title>Klivio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,13 +30,13 @@
     <div>
       <!-- NAVBAR -->
       <section>
-        <nav>
+        <nav class="flex flex-row justify-around items-center">
           <img
-            src="/site_statique_tailwind/images/logo.png"
+            src="/site_statique_tailwind/img_v2/bloodborne.jpg"
             alt="logo du site"
-            class="logo"
+            class="size-32"
           />
-          <a href="#" class="formation">Les formations</a>
+          <a href="#" class="bg-gray">Les formations</a>
           <div class="recherche">
             <input type="search" placeholder="Rechercher" class="search_nav" />
           </div>
@@ -45,22 +44,24 @@
             <a href="#" class="connexion">Connexion</a>
             <a href="#" class="inscription">Inscription</a>
           </div>
-          <button class="burger">
+          <button class="hidden">
             <i class="fa-solid fa-bars"></i>
           </button>
         </nav>
       </section>
       <!-- HERO PART -->
       <section class="hero">
-        <div class="hero-image">
-          <div class="hero-text">
-            <h1 class="font-bloodborne">
+        <div>
+          <div
+            class="bg-[url('./img_v2/bloodborne_logo.jpg')] bg-center bg-cover bg-no-repeat flex flex-col justify-center items-center text-center h-[80vh] px-4 overflow-hidden bg-black relative"
+          >
+            <h1 class="text-red-700 text-xl">
               Klivio, l'allié de votre progression
             </h1>
-            <p class="phero">
+            <p class="text-red-700">
               Les meilleures formations sur le développement personnel
             </p>
-            <button class="hero_btn">En savoir plus</button>
+            <button class="text-red-700 xl">En savoir plus</button>
           </div>
         </div>
       </section>
