@@ -30,19 +30,19 @@
     <div>
       <!-- NAVBAR -->
       <section>
-        <nav class="flex flex-row justify-around items-center">
+        <nav class="flex flex-row justify-around items-center bg-red-500">
           <img
-            src="/site_statique_tailwind/img_v2/bloodborne.jpg"
+            src="/site_statique_tailwind/img_v2/bloodborne-removebg-preview.png"
             alt="logo du site"
             class="size-32"
           />
-          <a href="#" class="bg-gray">Les formations</a>
+          <a href="#" class="border-black-100">Les formations</a>
           <div class="recherche">
             <input type="search" placeholder="Rechercher" class="search_nav" />
           </div>
           <div class="boutons">
-            <a href="#" class="connexion">Connexion</a>
-            <a href="#" class="inscription">Inscription</a>
+            <a href="#" class="">Connexion</a>
+            <a href="#" class="">Inscription</a>
           </div>
           <button class="hidden">
             <i class="fa-solid fa-bars"></i>
@@ -61,17 +61,17 @@
             <p class="text-red-700">
               Les meilleures formations sur le développement personnel
             </p>
-            <button class="text-red-700 xl">En savoir plus</button>
+            <button class="text-red-700">En savoir plus</button>
           </div>
         </div>
       </section>
       <!-- CARDS -->
-      <section class="cartes-colonnes">
+      <section class="flex flex-col justify-around bg-black text-red-50">
         <h2 class="text_populaire">Les formations populaires</h2>
-        <div class="row">
-          <div class="cards">
+        <div class="flex flex-row justify-around align-center">
+          <div class="w-307 h-362">
             <img
-              src="/site_statique_tailwind/images/img-course.png"
+              src="/site_statique_tailwind/img_v2/cloche.jpg"
               alt="Fond cours"
             />
             <div class="prix">
@@ -87,11 +87,10 @@
             <i class="fa-solid fa-star fa-2xs" style="color: #ffd43b"></i>
             <p>Gagnez en aisance et captez votre auditoire</p>
           </div>
-          <div class="cards">
-            <img
-              src="/site_statique_tailwind/images/img-course.png"
-              alt="Fond cours"
-            />
+          <div class="w-307 h-362">
+            <img src="/site_statique_tailwind/img_v2/soin.jpg" alt="Fond cours"
+            class="w-65 h-65" /* Pourquoi ma taille (305*206) ne rétrécit pas la
+            taille ???? */ />
             <div class="prix">
               <p class="prix_normal">15.99€</p>
               <p class="prix_barre">60€</p>
@@ -108,10 +107,11 @@
             ></i>
             <p>Apprenez à rester serein face aux défis</p>
           </div>
-          <div class="cards">
+          <div class="w-307 h-362">
             <img
-              src="/site_statique_tailwind/images/img-course.png"
+              src="/site_statique_tailwind/img_v2/sniper-removebg-preview.png"
               alt="Fond cours"
+              class="w-65 h-65"
             />
             <div class="prix">
               <p class="prix_normal">15.99€</p>
@@ -126,10 +126,11 @@
             <i class="fa-solid fa-star fa-2xs" style="color: #ffd43b"></i>
             <p>Collaborez efficacement, même à distance</p>
           </div>
-          <div class="cards">
+          <div class="w-307 h-362">
             <img
-              src="/site_statique_tailwind/images/img-course.png"
+              src="/site_statique_tailwind/img_v2/corbeau.jpg"
               alt="Fond cours"
+              class="w-65 h-65"
             />
             <div class="prix">
               <p class="prix_normal">15.99€</p>
@@ -153,13 +154,14 @@
         </div>
       </section>
       <!-- CARDS FORMATION RECENTES -->
-      <section class="recents">
+      <section class="flex flex-col justify-around bg-black text-red-50">
         <h2 class="text_recents">Les formations récentes</h2>
-        <div class="englobe">
-          <div class="cards">
+        <div class="flex flex-row justify-around align-center">
+          <div class="w-307 h-362">
             <img
-              src="/site_statique_tailwind/images/img-course.png"
+              src="/site_statique_tailwind/img_v2/corbeau.jpg"
               alt="Fond cours"
+              class="w-65 h-65"
             />
             <div class="prix_recent">
               <p class="prix_normal_recent">15.99€</p>
@@ -176,10 +178,11 @@
               Améliorez vos échanges et votre impact relationnel
             </p>
           </div>
-          <div class="cards">
+          <div class="w-307 h-362">
             <img
-              src="/site_statique_tailwind/images/img-course.png"
+              src="/site_statique_tailwind/img_v2/sniper-removebg-preview.png"
               alt="Fond cours"
+              class="w-65 h-65"
             />
             <div class="prix_recent">
               <p class="prix_normal_recent">15.99€</p>
@@ -194,10 +197,11 @@
             <i class="fa-solid fa-star fa-2xs" style="color: #ffd43b"></i>
             <p class="blanc">Développez calme et intelligence émotionnelle</p>
           </div>
-          <div class="cards">
+          <div class="w-307 h-362">
             <img
-              src="/site_statique_tailwind/images/img-course.png"
+              src="/site_statique_tailwind/img_v2/soin.jpg"
               alt="Fond cours"
+              class="w-65 h-65"
             />
             <div class="prix_recent">
               <p class="prix_normal_recent">15.99€</p>
@@ -217,10 +221,12 @@
               Analysez, décider et trouvez des solutions durables
             </p>
           </div>
-          <div class="cards">
+
+          <div class="w-307 h-362">
             <img
-              src="/site_statique_tailwind/images/img-course.png"
+              src="/site_statique_tailwind/img_v2/cloche.jpg"
               alt="Fond cours"
+              class="w-65 h-65"
             />
             <div class="prix_recent">
               <p class="prix_normal_recent">15.99€</p>
@@ -243,10 +249,11 @@
           <button class="test">Voir plus de formations</button>
         </div>
       </section>
+
       <!-- AVIS CLIENTS -->
-      <h2 class="avis">AVIS CLIENTS</h2>
-      <section class="avis-colonnes">
-        <div class="clts">
+      <h2 class="bg-black text-red-50">AVIS CLIENTS</h2>
+      <section class="flex flex-col justify-center">
+        <div class="flex flex-row align-center text-red-50 bg-black">
           <div class="juliette">
             <img
               src="/site_statique_tailwind/images/juliette.png"
@@ -288,37 +295,39 @@
         </div>
       </section>
       <!-- Avantages -->
-      <section class="avantages">
-        <div class="contenu">
+      <section
+        class="flex flex-row justify-around items-center text-red-50 bg-black"
+      >
+        <div class="flex flex-col content-center">
           <h2 class="text_avantages">LES AVANTAGES KLIVIO</h2>
           <div class="suivi">
             <i
               class="fa-solid fa-arrow-up fa-rotate-by fa-xs"
-              style="color: #63e6be; --fa-rotate-angle: 45deg"
+              style="color: #da4343; --fa-rotate-angle: 45deg"
             ></i>
             <p>Suivi de sa progression</p>
           </div>
           <div class="exercices">
-            <i class="fa-solid fa-pencil fa-xs" style="color: #63e6be"></i>
+            <i class="fa-solid fa-pencil fa-xs" style="color: #da4343"></i>
             <p>Exercices et QCM pour la mise en pratique</p>
           </div>
           <div class="possibilite">
-            <i class="fa-solid fa-download fa-xs" style="color: #63e6be"></i>
+            <i class="fa-solid fa-download fa-xs" style="color: #da4343"></i>
             <p>Possibilité de télécharger/imprimer les formations</p>
           </div>
           <div class="qualite">
-            <i class="fa-regular fa-star fa-xs" style="color: #63e6be"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #da4343"></i>
             <p>Contenu qualitatif et vérifié</p>
           </div>
           <div class="auto">
             <i
               class="fa-solid fa-clock-rotate-left fa-xs"
-              style="color: #63e6be"
+              style="color: #da4343"
             ></i>
             <p>Suivi en autonomie,24h/24,7j/7</p>
           </div>
           <div class="echanges">
-            <i class="fa-solid fa-message fa-xs" style="color: #63e6be"></i>
+            <i class="fa-solid fa-message fa-xs" style="color: #da4343"></i>
             <p>
               Espaces d'échanges dédiés pour poser ses questions sur les
               formations
@@ -336,10 +345,9 @@
 
       <!-- CREATION -->
 
-      <section class="creation">
-        <h2 class="text_creation_responsive">
-          Créez vos formations avec klivio
-        </h2>
+      <section
+        class="flex flex-row justify-around items-center bg-black text-red-50"
+      >
         <img
           src="/site_statique_tailwind/images/become-author.png"
           alt="creer sa formation"
@@ -350,20 +358,20 @@
           <div class="argent">
             <i
               class="fa-solid fa-hand-holding-dollar fa-xs"
-              style="color: #ffffff"
+              style="color: #da4343"
             ></i>
             <p>Comission unique, au pourcentage sur les ventes</p>
           </div>
           <div class="avant">
-            <i class="fa-regular fa-heart fa-xs" style="color: #ffffff"></i>
+            <i class="fa-regular fa-heart fa-xs" style="color: #da4343"></i>
             <p>Mise en avant sur la plateforme</p>
           </div>
           <div class="controle">
-            <i class="fa-solid fa-pencil fa-xs" style="color: #ffffff"></i>
+            <i class="fa-solid fa-pencil fa-xs" style="color: #da4343"></i>
             <p>Contrôle total sur les cours: contenu, prix</p>
           </div>
           <div class="fonction">
-            <i class="fa-solid fa-gear fa-xs" style="color: #ffffff"></i>
+            <i class="fa-solid fa-gear fa-xs" style="color: #da4343"></i>
             <p>
               Fonctionnnalités avancées : espace commentaires, possibilité de
               créer des QCM, exercices, vidéos, téléchargements en PDF, suivi
@@ -374,7 +382,7 @@
           <div class="prof">
             <i
               class="fa-solid fa-image-portrait fa-xs"
-              style="color: #ffffff"
+              style="color: #da4343"
             ></i>
             <p>
               Le professeur reste 100% propriétaire de sa formation et conserve
@@ -386,7 +394,7 @@
 
       <!-- A propos -->
 
-      <section class="propos">
+      <section class="flex flex-row justify-between bg-black text-red-50">
         <div class="partie_1">
           <h2 class="text_apropos">A PROPOS DE KLIVIO</h2>
           <p>
@@ -402,7 +410,7 @@
             notre mission d'offrir des opportunités d'apprentissage de qualité
           </p>
         </div>
-        <div class="partie_2">
+        <div class="flex flex-row justify-center items-center">
           <img
             src="/site_statique_tailwind/images/logo.png"
             alt="logo"
@@ -413,12 +421,12 @@
 
       <!-- Formulaire -->
 
-      <section class="formulaire">
+      <section class="bg-black text-red-50">
         <h2 class="contact">NOUS CONTACTER</h2>
         <div class="barre_contact"></div>
         <form>
-          <div class="form_row">
-            <div class="nom">
+          <div class="flex flex-row">
+            <div class="">
               <input type="text" placeholder="Nom" class="input_nom" />
             </div>
             <div class="email">
@@ -436,7 +444,7 @@
 
       <!-- Footer -->
 
-      <footer>
+      <footer class="bg-black text-red-50 flex flex-row">
         <div class="trait"></div>
         <div class="footer_1">
           <img
